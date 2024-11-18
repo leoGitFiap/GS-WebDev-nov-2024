@@ -9,6 +9,56 @@
 </head>
 <body>
 
+    <header>
+        <h1>Energia Limpa para um Futuro Mais Sustentável</h1>
+        
+        <div class="mudarCor">
+            <input type="button" class="cor" onclick="trocar('#1be3e0')"/>
+            <input type="button" class="cor" onclick="trocar('#48c97e')"/>
+            <input type="button" class="cor" onclick="trocar('#9f2145')"/>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="sobre_solucao.html">Sobre</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section>
+        <p class="p">Olá, nesta loja vendemos bicicletas de todos os tipos!!!</p>
+        <div class="div">
+            <img id="imagehome"/>
+        </div>
+        <h3 class="h3">Usinas</h3>
+        <table id="table">
+            <tr>
+                <th class="a">Hidrelétricas</th>
+                <th class="a">Termelétricas</th>
+                <th class="a">Nucleares</th>
+            </tr>
+            <tr>
+                <td><img id="img_table" height="300" width="400" src="./src/assets/hidrelétrica.jpeg" alt=""></td>
+                <td><img id="img_table" height="300" width="400" src="./src/assets/termelétrica.jpeg" alt=""></td>
+                <td><img id="img_table" height="300" width="400" src="./src/assets/nuclear.jpeg" alt=""></td>
+            </tr>
+            <tr>
+                <td class="a">2014</td>
+                <td class="a">2023</td>
+                <td class="a">2013</td>
+            </tr>
+            <tr>
+                <td><button class="button" id="redirect_login1">Comprar</button></td>
+                <td><button class="button" id="redirect_login2">Comprar</button></td>
+                <td><button class="button" id="redirect_login3">Comprar</button></td>
+            </tr>
+        </table>
+    </section>
+
     <!--CHAMANDO O 'JS' EXTERNO-->
     <script src="./src/js/index.js"></script>
 </body>
