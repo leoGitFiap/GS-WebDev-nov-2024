@@ -1,9 +1,8 @@
-alert("Vamos conhecer sobre Energia!!!");
-
-//TROCAR A COR DE FUNDO
 function trocar(cor){
     document.body.style.background = cor;
 }
+
+alert("Vamos conhecer sobre Energia!!!");
 
 const quizQuestions = [
     {
@@ -108,24 +107,55 @@ const quizQuestions = [
     }
 ];
 
-// Função para iniciar o quiz
-function startQuiz() {
-    let score = 0;
+let currentQuestionIndex = 0;
+let score = 0;
 
-    quizQuestions.forEach((question, index) => {
-        let optionsText = `a) ${question.options.a}\nb) ${question.options.b}\nc) ${question.options.c}\nd) ${question.options.d}`;
-        let userAnswer = prompt(`${question.question}\n${optionsText}`);
+// Função para exibir a próxima pergunta
+function displayQuestion() {
+    const questionContainer = document.getElementById('question-container');
+    const questionData = quizQuestions[currentQuestionIndex];
 
-        if (userAnswer && userAnswer.toLowerCase() === question.answer) {
-            score++;
-            alert(`Resposta correta!`);
-        } else {
-            alert(`Resposta incorreta! A resposta correta é: ${question.answer.toUpperCase()}.`);
-        }
-    });
+    const optionsText = `
+        a) ${questionData.options.a}<br>
+        b) ${questionData.options.b}<br>
+        c) ${questionData.options.c}<br>
+        d) ${questionData.options.d}
+    `;
 
-    alert(`Você acertou ${score} de ${quizQuestions.length} perguntas.`);
+    questionContainer.innerHTML = `
+        <div class="question">${questionData.question}</div>
+        <div>${optionsText}</div>
+    `;
 }
 
-// Iniciar o quiz
-startQuiz();
+// Função para processar a resposta
+function nextQuestion() {
+    const userAnswer = prompt("Escolha a alternativa (a, b, c ou d):").toLowerCase();
+
+    const questionData = quizQuestions[currentQuestionIndex];
+
+    if (userAnswer === questionData.answer) {
+        score++;
+    }
+
+    currentQuestionIndex++;
+
+    if (currentQuestionIndex < quizQuestions.length) {
+        displayQuestion();
+    } else {
+        showResults();
+    }
+}
+
+// Função para exibir o resultado final
+function showResults() {
+    const resultContainer = document.getElementById('quiz-result');
+    resultContainer.innerHTML = `
+        <strong>Resultado Final:</strong><br>
+        Você acertou ${score} de ${quizQuestions.length} perguntas.
+    `;
+    document.getElementById('next-btn').style.display = 'none'; // Esconde o botão "Próxima Pergunta"
+}
+
+// Inicializa o quiz com a primeira pergunta
+displayQuestion();
