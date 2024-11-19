@@ -10,12 +10,13 @@
 <body>
 
     <header>
+        
         <h1>Energia Limpa para um Futuro Mais Sustentável</h1>
         
         <div class="mudarCor">
-            <input type="button" class="cor" onclick="trocar('#1be3e0')"/>
-            <input type="button" class="cor" onclick="trocar('#48c97e')"/>
-            <input type="button" class="cor" onclick="trocar('#9f2145')"/>
+            <input type="button" class="cor1" onclick="trocar('#1be3e0')"/>
+            <input type="button" class="cor2" onclick="trocar('#48c97e')"/>
+            <input type="button" class="cor3" onclick="trocar('#9f2145')"/>
         </div>
 
         <nav>
@@ -30,16 +31,20 @@
     </header>
 
     <section>
+
         <p class="p">Olá, nesta loja vendemos bicicletas de todos os tipos!!!</p>
+
         <div class="div">
             <img id="imagehome"/>
         </div>
+
         <h3 class="h3">Usinas</h3>
+
         <table id="table">
             <tr>
-                <th class="a">Hidrelétricas</th>
-                <th class="a">Termelétricas</th>
-                <th class="a">Nucleares</th>
+                <th class="th1">Hidrelétricas</th>
+                <th class="th1">Termelétricas</th>
+                <th class="th1">Nucleares</th>
             </tr>
             <tr>
                 <td><img id="img_table" height="300" width="400" src="./src/assets/hidrelétrica.jpeg" alt=""></td>
@@ -47,17 +52,31 @@
                 <td><img id="img_table" height="300" width="400" src="./src/assets/nuclear.jpeg" alt=""></td>
             </tr>
             <tr>
-                <td class="a">2014</td>
-                <td class="a">2023</td>
-                <td class="a">2013</td>
+                <td class="td1">As usinas hidrelétricas são uma das fontes mais tradicionais e eficientes de geração de energia renovável. O funcionamento básico envolve represar grandes volumes de água em barragens, criando um desnível (energia potencial). Quando a água é liberada, ela passa por turbinas, que giram e acionam geradores. Essa energia gerada pode ser distribuída para atender a demanda elétrica de cidades, indústrias e outros consumidores. Apesar de sua eficiência, as hidrelétricas podem causar impactos ambientais significativos, como a submersão de grandes áreas de terra e mudanças nos ecossistemas locais.</td>
+                <td class="td1">Nas usinas termelétricas, o calor gerado pela combustão de combustíveis aquece a água, transformando-a em vapor. Esse vapor é usado para acionar turbinas conectadas a geradores, produzindo eletricidade. Embora as usinas termelétricas sejam capazes de gerar grandes quantidades de energia de maneira constante e previsível, elas são uma das principais fontes de emissão de gases de efeito estufa, contribuindo para as mudanças climáticas. A eficiência e o impacto ambiental dependem do tipo de combustível utilizado, sendo que usinas movidas a gás natural tendem a ser mais limpas do que aquelas que utilizam carvão, por exemplo.</td>
+                <td class="td1">Nas usinas nucleares, o processo de geração de energia ocorre através da fissão nuclear, onde os átomos de urânio ou plutônio são bombardados por nêutrons, causando sua divisão e liberando grandes quantidades de calor. Esse calor aquece a água, transformando-a em vapor, que, por sua vez, aciona turbinas conectadas a geradores elétricos. A energia gerada é então distribuída para a rede elétrica. Embora as usinas nucleares sejam eficientes e produzem grandes quantidades de eletricidade com uma pegada de carbono baixa, elas geram resíduos radioativos, que precisam ser cuidadosamente armazenados e gerenciados, além de haver preocupações com a segurança, como o risco de acidentes nucleares.</td>
             </tr>
             <tr>
-                <td><button class="button" id="redirect_login1">Comprar</button></td>
-                <td><button class="button" id="redirect_login2">Comprar</button></td>
-                <td><button class="button" id="redirect_login3">Comprar</button></td>
+                <td class="td2"><button class="button" id="redirect_login1">Saiba Mais</button></td>
+                <td class="td2"><button class="button" id="redirect_login2">Saiba Mais</button></td>
+                <td class="td2"><button class="button" id="redirect_login3">Saiba Mais</button></td>
             </tr>
         </table>
+
     </section>
+
+    <footer>
+
+        <nav>
+            <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="sobre_solucao.html">Sobre</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+
+    </footer>
 
     <!--CHAMANDO O 'JS' EXTERNO-->
     <script src="./src/js/index.js"></script>
