@@ -17,13 +17,23 @@ function redirect() {
     document.getElementById("redirect_login3").addEventListener("click", function() {
         window.location.href = "login.html";
     });
+
+    document.getElementById("redirect_login4").addEventListener("click", function() {
+        window.location.href = "login.html";
+    });
+
+    document.getElementById("redirect_login5").addEventListener("click", function() {
+        window.location.href = "login.html";
+    });
 }
 redirect();
 
 let imagens =[
     "./src/assets/hidrelétrica.jpeg",
     "./src/assets/termelétrica.jpeg",
-    "./src/assets/nuclear.jpeg"
+    "./src/assets/nuclear.jpeg",
+    "./src/assets/solar.jpeg",
+    "./src/assets/eolica.jpeg"
 ];
 let i = 0;
 let time = 3000;

@@ -1,0 +1,207 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 90px;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1{
+    color: white;
+    padding-top: 10px;
+    justify-self: center;
+    text-decoration: underline;
+    margin-top: 20px;
+}
+
+header div{
+    justify-self: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.cor1{
+    width: 20px;
+    border-radius: 100px;
+}
+
+.cor2{
+    width: 20px;
+    border-radius: 100px;
+}
+
+.cor3{
+    width: 20px;
+    border-radius: 100px;
+}
+
+.cor1:hover{
+    background-color: #1be3e0;
+}
+
+.cor2:hover{
+    background-color: #48c97e;
+}
+
+.cor3:hover{
+    background-color: #9f2145;
+}
+
+header nav ul{
+    display: flex;
+    list-style: none;
+    justify-self: center;
+    align-items: center;
+    padding: 1.7rem;
+    gap: 20px;
+}
+
+header nav ul a{
+    color: white;
+    text-decoration: none;
+    border: solid white;
+    border-radius: 20px;
+    padding: 5px;
+    font-size: 1.3rem;
+}
+
+header nav ul a:hover{
+    text-decoration: underline;
+    color: black;
+    border-color: black;
+    background-color: #ffffff;
+}
+
+body{
+    background-image: linear-gradient(to bottom, #008000, #008000, #ffffff, #ffffff, #ffffff, #ffffff, #04b8cf);
+}
+
+section{
+    padding-top: 50px;
+    justify-self: center;
+    margin-bottom: 30px;
+}
+
+.main{
+    margin: 261px;
+    align-self: center;
+    justify-self: center;
+    width:450px;
+    background: #1be3e0;
+    border: 2px solid #008000;
+    border-radius: 10px;
+}
+
+div h1{
+     display:flex;
+     justify-content: center;
+     align-items: center;
+     color: #008000;
+     margin: 20px;
+}
+
+.form{
+    padding: 0 40px 30px;
+}
+
+.controle{
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.controle label{
+    display: inline-block;
+    color: #008000;
+    font-weight: 900;
+}
+
+.controle input{
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 60%;
+    height: 30px;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+.controle.error i.error{
+    visibility: hidden;
+}
+
+.controle.sucesso i.sucesso{
+    visibility: hidden;
+}
+
+.controle.error small{
+    color: #9f2145;
+    font-size: 11px;
+    visibility: visible;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.controle i{
+    position: absolute;
+    top:4px;
+    right: 10px;
+    visibility: hidden;  
+}
+
+.controle small{
+    visibility: hidden;
+    position: absolute;
+    margin-top: 5px;
+    font-size: 10px;
+    color:#008000;
+}
+
+.form button{
+    width: 70%;
+    height: 30px;
+    border-radius: 20px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    background: #48c97e;
+    color: #008000;
+    margin-left: 50px;
+}
+
+#ir_para_cadastro{
+    margin-top: 10px;
+}
+
+.form button:hover{
+    background: #008000;
+    color:#fffb00;
+}
+
+footer nav ul{
+    display: flex;
+    list-style: none;
+    align-self: bottom;
+    justify-self: center;
+    margin-top: 130px;
+    padding: 1.7rem;
+    gap: 20px;
+}
+
+footer nav ul a{
+    color: white;
+    text-decoration: none;
+    border: solid white;
+    border-radius: 20px;
+    padding: 5px;
+    font-size: 1.3rem;
+}
+
+footer nav ul a:hover{
+    text-decoration: underline;
+    color: black;
+    border-color: black;
+    background-color: #ffffff;
+}
