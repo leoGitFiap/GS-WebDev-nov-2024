@@ -129,7 +129,7 @@ div h1{
 }
 
 .controle.error i.error{
-    visibility: hidden;
+    visibility: visible;
 }
 
 .controle.sucesso i.sucesso{

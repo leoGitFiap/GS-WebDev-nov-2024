@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <!--CHAMANDO O 'CSS' EXTERNO-->
+    <link rel="stylesheet" href="./src/css/contato.css">
+</head>
+<body>
+
+    <header>
+        
+        <h1>Energia Limpa para um Futuro Mais Sustentável</h1>
+        
+        <div class="mudarCor">
+            <input type="button" class="cor1" onclick="trocar('#1be3e0')"/>
+            <input type="button" class="cor2" onclick="trocar('#48c97e')"/>
+            <input type="button" class="cor3" onclick="trocar('#9f2145')"/>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="sobre_solucao.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section>
+
+        <div class="main">
+            <header>
+                <h1>Validar</h1>
+            </header>
+    
+            <form class="form" id="form">
+                <div class="controle">
+                    <label for="nome" class="nome">Nome:</label>
+                    <input type="text" id="nome"/>
+                    <i class="sucesso"><img src="./src/assets/sucesso.svg"/></i>
+                    <i class="error"><img src="./src/assets/error.svg"/></i>
+                    <small>Error</small>
+                </div>
+    
+                <div class="controle">
+                    <label for="email" class="email">Email:</label>
+                    <input type="email" id="email"/>
+                    <i class="sucesso"><img src="./src/assets/sucesso.svg"/></i>
+                    <i class="error"><img src="./src/assets/error.svg"/></i>
+                    <small>Error</small>
+                </div>
+    
+                <div class="controle">
+                    <label for="telefone">Telefone:</label>
+                    <input type="number" id="telefone"/>
+                    <i class="sucesso"><img src="./src/assets/sucesso.svg"/></i>
+                    <i class="error"><img src="./src/assets/error.svg"/></i>
+                    <small>Error</small>
+                </div>
+    
+                <button type="submit" >Validar</button>
+            </form>
+        </div>
+
+    </section>
+    
+    <footer>
+
+        <nav>
+            <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="sobre_solucao.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+
+    </footer>
+
+    <!--CHAMANDO O 'JS' EXTERNO-->
+    <script src="./src/js/contato.js"></script>
+</body>
+</html>
