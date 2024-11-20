@@ -84,7 +84,6 @@ section{
     padding-top: 50px;
     justify-self: center;
     margin-bottom: 30px;
-    background-color: #fff;
     padding: 20px;
     border-radius: 10px;
     max-width: 600px;
@@ -140,7 +139,7 @@ footer nav ul{
     list-style: none;
     align-self: bottom;
     justify-self: center;
-    margin-top: 273px;
+    margin-top: 400px;
     padding: 1.7rem;
     gap: 20px;
 }
