@@ -75,6 +75,10 @@ header nav ul a:hover{
     background-color: #ffffff;
 }
 
+body{
+    background-image: linear-gradient(to bottom, #008000, #008000, #ffffff, #ffffff, #ffffff, #ffffff, #04b8cf);
+}
+
 section{
     padding-top: 50px;
     justify-self: center;
@@ -88,10 +92,6 @@ section{
 #table2{
     margin-top: 30px;
     justify-self: center;
-}
-
-body{
-    background-image: linear-gradient(to bottom, #008000, #008000, #ffffff, #ffffff, #ffffff, #ffffff, #04b8cf);
 }
 
 #imagehome{
