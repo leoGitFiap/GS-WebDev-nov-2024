@@ -8,5 +8,7 @@ No Sobre está uma ideia de solução para um problema comum que empresas têm, 
 No Contato está uma simples validação de dados.
 
 O Grupo responsável por este trabalho é: Guilherme Augusto Caseiro RM: 559765 | Leonardo Fernandes Mesquita RM: 559623 | Marco Antônio Caires Freire RM: 559256
+
 O projeto pode ser encontrado em: https://github.com/leoGitFiap/GS-WebDev-nov-2024, com o nome: 'GS-WebDev-nov-2024'
+
 O gitPages do projeto pode-se encontrar em: https://leogitfiap.github.io/GS-WebDev-nov-2024/index.html
