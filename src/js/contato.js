@@ -2,13 +2,10 @@ function trocar(cor){
     document.body.style.background = cor;
 }
 
-//DECLARANDO AS VARIAVEIS
 const form  =document.getElementById("form")
 const nome  =document.getElementById("nome")
 const email =document.getElementById("email")
 const senha =document.getElementById("telefone")
-
-//EVENTO QUE VAI PEGAR O QUE ACONTECER NO FORMULARIO
 
 form.addEventListener('submit',(e)=>{
     e.preventDefault()
@@ -16,14 +13,11 @@ form.addEventListener('submit',(e)=>{
     checarCampos()
 })  
 
-
-//FUNÇÃO CHECAR CAMPOS
 function checarCampos(){
     const nomeValor = nome.value.trim()
     const emailValor = email.value.trim()
     const telefoneValor = senha.value.trim()
 
-    //SE O CAMPO NOME ESTIVER VAZIO
     if(nomeValor ===""){
        validarErro(nome,"Preencha o nome")
     }
@@ -34,8 +28,6 @@ function checarCampos(){
         validarSucesso(nome)
     }
 
-    //SE O CAMPO EMAIL ESTIVER VAZIO
-
     if(emailValor === ""){
         validarErro(email, "Preencha o email")
     }
@@ -45,8 +37,6 @@ function checarCampos(){
     }else{   
         validarSucesso(email)
     }
-
-    //SE O CAMPO SENHA ESTIVER VAZIO
 
     if(telefoneValor === ""){
         validarErro(telefone,"Preencha o telefone")
@@ -62,9 +52,7 @@ function checarCampos(){
         validarSucesso(telefone)
     }
 
-} 
-
-//VALIDAR ERROR
+}
 
     function validarErro(input,message){
         const controle = input.parentElement;
@@ -72,17 +60,8 @@ function checarCampos(){
         small.innerText = message
         controle.className ="controle error"
     }
-
-//VALIDAR SUCESSO
+    
     function validarSucesso(input){
         const controle = input.parentElement;
         controle.className = "controle sucesso"
     }
-
-    // function chamar(){
-    //     if(validarErro ){
-    //         window.location ="index.html"
-    //     }else{
-    //         window.location ="menu.html"
-    //     }
-    // }
