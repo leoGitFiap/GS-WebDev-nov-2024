@@ -84,7 +84,7 @@ footer nav ul{
     list-style: none;
     justify-self: center;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 140px;
     padding: 1.7rem;
     gap: 20px;
 }
@@ -106,7 +106,7 @@ footer nav ul a:hover{
 }
 
 table{
-    max-width: 550px;
+    max-width: 650px;
     justify-self: center;
 }
 
@@ -120,4 +120,14 @@ table{
 
 #tr3{
     margin-top: 30px;
+}
+
+.title{
+    text-transform: uppercase;
+    font-size: larger;
+    font-weight: 1000;
+}
+
+.text{
+    font-size: large;
 }
